@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", serif;
+}
+
+:root{
+    --cor1:#23231A;
+    --cor2:#322f20;
+    --cor3:#6A5837;
+    --cor4:#988f2a;
+    --cor5:#FE5F00;
+}
+
+body{
+    height: 100vh;
+}
+header{
+    background-color: var(--cor1);
+    margin: -8px;
+}
+
+nav{
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 20px;
+}
+
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+    margin-left: 480px;
+    
+}
+
+nav > ul > li > a  {
+    color: white;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: 10px;
+    text-align: center;
+    text-shadow: #988f2a;
+}
+
+
+
+
+section > ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+section > ul > li {
+    padding: 20px;
+    margin: 5px;
+    background-color: #322f20;
+    border-radius: 10px;
+}
+
+ul > li > a >img{
+    width: 70px;
+}
+
+ul > li > h1{
+    color: black;
+    text-decoration: none;
+    display: none;
+}
+
+.container{
+    font-size: 26px;
+    height:20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animation{
+    height: 50px;
+    overflow: hidden;
+    margin-left: 16px;
+}
+.animation > div > div{
+    padding: 4px 12px;
+    height: 44px;
+    margin-bottom: 44px;
+    display: inline-block;
+}
+.animation div:first-child{
+    animation: text-animation 8s infinite;
+}
+
+.first div{
+    background-color: #FE5F00;
+    color: aliceblue;
+}
+
+.second div{
+    background: #988f2a;
+    color: aliceblue;
+}
+
+.third div{
+    background: #1b74e4;
+    color: aliceblue;
+}
+
+footer{
+    text-align: center;
+    background-color: #6A5837;
+}
+@keyframes text-animation{
+    0%{margin-top: 0;}
+    10%{margin-top: 0;}
+    20%{margin-top: -90px;}
+    30%{margin-top: -90px;}
+    40%{margin-top: -180px;}
+    60%{margin-top: -180px;}
+    70%{margin-top: -90px;}
+    80%{margin-top: -90px;}
+    90%{margin-top: 0;}
+    100%{margin-top: 0;}
+}
