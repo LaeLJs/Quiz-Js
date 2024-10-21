@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Pixelify+Sans:wght@400..700&family=Varela+Round&display=swap');
+
 *{
     font-family: "Poppins", serif;
 }
@@ -14,6 +16,7 @@
 
 body{
     height: 100vh;
+    background-image: linear-gradient(to bottom right, #6A5837,#6a5837);
 }
 header{
     background-color: var(--cor1);
@@ -41,10 +44,27 @@ nav > ul > li > a  {
     margin: 10px;
     text-align: center;
     text-shadow: #988f2a;
+    background-color: #23231A;
+    
+    border-radius: 10px;
+    padding: 5px;
 }
 
+section#front-end, section#back-end{
+    background-color: #23231A;
+    padding: 10px;
+    margin: -8px;
 
+    
+}
 
+hr{
+    border-color: #6a9100;
+    height: 70px;
+    margin-top: 30px;
+    animation: move 1090ms infinite; /* the animation to up and down*/
+    position: relative;
+}
 
 section > ul{
     list-style: none;
@@ -54,6 +74,7 @@ section > ul{
 }
 section > h1{
     text-align: center;
+    color: #a89e28;
 }
 
 section > ul > li {
@@ -61,6 +82,10 @@ section > ul > li {
     margin: 5px;
     background-color: #322f20;
     border-radius: 10px;
+    border-color: #6a9100;
+    border-width: 200px;
+    box-shadow: #6a9100;
+    
 }
 
 ul > li > a >img{
@@ -72,57 +97,20 @@ ul > li > h1{
     text-decoration: none;
     display: none;
 }
-
-.container{
-    font-size: 26px;
-    height:20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.title{
+    font-size: 50px;
+    font-family: "Jersey 20", sans-serif;
+    color: rgb(120, 230, 17);
+    text-align: center;
+    animation: move 1090ms infinite; /* the animation to up and down*/
+    position: relative;
 }
-.animation{
-    height: 50px;
-    overflow: hidden;
-    margin-left: 16px;
+@keyframes move {
+    0%{top:0px}
+    50%{top: 5px;}
+    100%{top: 0px;}
 }
-.animation > div > div{
-    padding: 4px 12px;
-    height: 44px;
-    margin-bottom: 44px;
-    display: inline-block;
-}
-.animation div:first-child{
-    animation: text-animation 8s infinite;
-}
-
-.first div{
-    background-color: #FE5F00;
-    color: aliceblue;
-}
-
-.second div{
-    background: #988f2a;
-    color: aliceblue;
-}
-
-.third div{
-    background: #1b74e4;
-    color: aliceblue;
-}
-
 footer{
     text-align: center;
     background-color: #6A5837;
-}
-@keyframes text-animation{
-    0%{margin-top: 0;}
-    10%{margin-top: 0;}
-    20%{margin-top: -90px;}
-    30%{margin-top: -90px;}
-    40%{margin-top: -180px;}
-    60%{margin-top: -180px;}
-    70%{margin-top: -90px;}
-    80%{margin-top: -90px;}
-    90%{margin-top: 0;}
-    100%{margin-top: 0;}
 }
